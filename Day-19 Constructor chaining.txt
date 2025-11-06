@@ -1,0 +1,20 @@
+Day-19 Constructor chaining
+=============================
+this()
+-------
+Usage: this() constructor is used to call another constructor within the same class.
+
+Placement: It must be first statement in the constructor if used. It allows constructor to invoke another constructor to avoid code duplication and manage different initialization scenarios within the same class.
+
+Example: useful when a class has multiple constructors with varying parameters, allowing them to call each other to ensure consistent initialization logic. 
+
+this keyword
+-------------
+In java this is a reference variable that refers to the current object instance, it can be used in several contexts.
+
+1. To refer to instance variables when there is ambiguity between instance variables and local variables or method parameters this is used to refer current instance variable.
+2. To invoke current class method.
+
+Constructor chaining
+=====================
+You can use this() to call another constructor from within a constructor, and another constructor can call another level constructor within same class, this is nothing but constructor chaining.
